@@ -1,0 +1,372 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+}
+
+.logo_place_header {
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  margin: 0 auto 0 64px;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  color:black;
+  z-index: 2;
+}
+
+.header__subtitle {
+  margin: 0;
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color:black;
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
+}
+
+.description {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.two-columns {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  margin: 0;
+  width: 80%;
+  min-width: 784px;
+  color:black;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color:black;
+}
+
+.two-columns__paragraph:nth-of-type(2) {
+  margin: 30px 0 30px 0;
+}
+
+.two-columns__span-accent {
+  margin: 0;
+  font-weight: 600;
+  color:black;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  width: 60%;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  color:black;
+}
+
+.section-subtitle {
+  text-align: center;
+  width: 60%;
+  margin: 20px 0 0 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color:black;
+}
+
+.table {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.table__cell {
+  margin: 60px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 250px;
+}
+
+.table__heading {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  color:black;
+}
+
+.table__text {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color:black;
+}
+
+.feynman {
+  height: 890px;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.feynman__title {
+  text-align: center;
+  width: 648px;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  color:black;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  margin: 70px 0 0 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color:black;
+  z-index: 1;
+}
+
+.feynman__link {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.feynman__image {
+  margin: 0;
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+  margin: 0 auto;
+  background-color: #1f1f1f;
+}
+
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
+.table_theme_dark {
+  z-index: 1;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin: 80px 0 0 0;
+}
+
+.table__heading_theme_dark {
+  color: white;
+}
+
+.table__text_theme_dark {
+  color: white;
+}
+
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  background-size: contain;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  padding: 60px 0 40px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  margin: 0;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  margin: 18px 0 18px 0;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+ .footer__column_content_social {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ .footer__column-heading {
+  color: white;
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ .footer__column-links {
+  margin: 20px 0 16px 0;
+  padding: 0;
+  list-style: none;
+}
+
+ .footer__column-link {
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+ .footer__social-icon {
+  margin: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
+}
